@@ -1,5 +1,5 @@
-FROM centos:6
-MAINTAINER re20y <master@mkaliez.com>
+FROM centos:7.3.1611
+MAINTAINER moumou123 <1026856405@qq.com>
 RUN yum -y update \
  && yum -y install wget net-tool openssh-server; yum clean all
 RUN ssh-keygen -q -N "" -t dsa -f /etc/ssh/ssh_host_dsa_key
